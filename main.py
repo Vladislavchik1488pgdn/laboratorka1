@@ -2,7 +2,6 @@ import random
 import time
 
 
-# --- 1. Алгоритм Bubble Sort ---
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -16,7 +15,6 @@ def bubble_sort(arr):
     return arr
 
 
-# --- 2. Алгоритм Binary Insertion Sort ---
 def binary_insertion_sort(arr):
     for i in range(1, len(arr)):
         val = arr[i]
@@ -33,7 +31,6 @@ def binary_insertion_sort(arr):
     return arr
 
 
-# --- 3. Виконання (Генерація 20 чисел) ---
 if __name__ == "__main__":
     print("=== Bubble Sort (20 елементів) ===")
     arr1 = [random.randint(1, 100) for _ in range(20)]
@@ -45,7 +42,6 @@ if __name__ == "__main__":
     print(f"До сортування:    {arr2}")
     print(f"Після сортування: {binary_insertion_sort(arr2.copy())}\n")
 
-    # --- 4. Замір часу (10 000 чисел) ---
     print("Генерація 10 000 випадкових чисел...")
     arr_large = [random.randint(1, 100000) for _ in range(10000)]
 
